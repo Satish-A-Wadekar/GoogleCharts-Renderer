@@ -15,8 +15,7 @@ apart from that i have developed one module where we can generate any <a target=
 # How it works
 My plugin internaly follows all steps of google chart javascript code, so its nothing but one javascript wrapper which has hide all complex code and gives you simple options to implement complex code easily.
   
-## Properties
-Public properties and functions:
+## Properties and functions:
 
 > Google chart draw charts on the basis of options which we passes along with data. where data can be either in JSON format or google <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a>, but configuration settings are in the form of JSON only. 
 ( @Note: here my <a target="_blank" href="http://www.googlechartconfigurationgenerator.com">GoogleChart Configuration generator</a> comes into the picture. just copy configuration which you have generated from my configuration generator and pass it to this property, and thats it. )
