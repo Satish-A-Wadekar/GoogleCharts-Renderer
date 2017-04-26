@@ -1,29 +1,22 @@
 # GoogleChartsRenderer
-Generate any google chart configuration settings and Implement google charts with some easy steps.
+Implement google charts with some easy steps.
 
 # Objective & Scope of GoogleChartsRenderer.
-google has developed a very powefull tool for chart which has more than 20 charts type included in it. but to implement those charts in your webside you need to go through their all settings and understand each and every option, if you want try some options on charts like how does it look after apply on chart then either you need to go on JSFiddler and do your RND or follow the same on your local environment. google has given so many options in every chart which we can not go through it very quickly so its quite tedious and time consuming to test all these option on our chart. so how we can achieve this with some easy steps ?
+Google has developed a very powefull tool for chart which has more than 20 charts type included in it. but to implement those charts in your application you need to go through their all settings and understand each and every option, if you want try some options on charts like how does it look after apply on chart then either you need to go on JSFiddler and do your RND or follow the same on your local environment. google has given so many options in every chart which we can not go through it very quickly so its quite tedious and time consuming to test all these option on our chart. so how we can achieve this with some easy steps ?
 
-for this purpose i have developed one plugin where we can just set some options and its done. apart from that i have developed one small project where i have assembled all configuration options of all google charts and put it in one customised JSON format. so now we can generate our any google chart settings and make our google chart very customizable.
+for this purpose i have developed one plugin where we can just set some options. apart from that i have developed one small project where i have assembled all configuration options of all google charts and put it in one customised JSON format. so now we can generate our any google chart settings and make our google chart very customizable.
 
-# Key Features
-1. GoogleChart renderer plugin
-  - no need to go through all google chart settings
-  - implement google chart with some easy steps
-  - switch your chart with just changing your chart type.
-2. GoogleChart Configuration generator.
-  - just select chart and include settings which you want to apply
-  - test how your chart will look like on the fly
-  - test with dummy data also if you want.
+# Key Features of GoogleChart renderer plugin
+- no need to go through google js code.
+- implement google chart with some easy steps
+- switch your chart with just changing your chart type.
+
 
 # How it works
-in my project i have developed google Chart Configuration generator page where you just need to select chart of which you want to generate settings, once you select,all appropriate google chart settings get render on page with options where you can change their values and add custome values into it. you can test your entered custome values also, even you can try to draw google chart with dummy JSON data.
-
-  once you done with all the customization, you just need to export your customised setting. this will give you google chart settings in JSON format. all you have to do is just copy these settings and pass it to GooglechartRenderer plugin in your website. thats it...
-  
+I have developed one easy plugin which take cares about all google chart related javascript code which includes creating appropriate chart object,convert our RAW JSON data to google DataTable data, pass DataTable data to chart. we just need to pass appropriate settings.
   
 ## Properties
-my googlechart plugin has some public properties and functions which are as follows
+Some public properties and functions which are as follows
 
 > google chart tool draw charts on the basis of options which we passes along with data. where data can be either in JSON format or google <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a>, but configuration settings are in the form of JSON only. 
 ( @Note: here my GoogleChart Configuration generator comes into the picture. just copy your google settings which you have generated from my settings generatore and pass it to this property, and thats it. )
@@ -159,23 +152,9 @@ Settings.HTMLElementId = 'Your-HTML-Element-Id'; //mandatory
 ObjGoogleCharts.fnDrawChart(Settings); //mandatory
 
 ```
-and its done.
-
-### how to use Google chart configuration / Settings Generatore
-- download the project and unzip it.( Note: its developed in Visual Studio, but there is no any dependancy as only Default.aspx is of ASP.Net page, Non .NET developers can convert this page into .HTML page also and run it.)
-- once you run the page in browser, on top right there is a Help menu in which i have mentione all the explaination of Google settings generator, though i am going to explain here step by step.
-- once you select Chart type from top right Menu, it will render all setting properties of selected chart type in 
-  <b>Key-HTMLControl</b> format where Key will be Google chart Settings key and HTML control will any appropriate control which suits that Key e.g Dropdown list, checkbox, colorpicker, textbox, textarea with default value of respective Key. you can change values also and put your own custom values
-- beside every control it has its proper desciption also in <b>Information</b> icon, on mouse hover you will get the information in Bootstrap Prophover popup to make picture more cleare about respective property.
-- after every Information icon it has one more option which is <b>Include</b> checkbox, its says that if you want to try this option you just select this checkbox.
-- on Top of these settings there you can find <b>IncludeAll</b> checkbox option which says that if you want to include all the settings properties into your chart, just select it.
-- on top Menu you will find 3 more options <b>[Export, Apply, TryDummyData]</b> after you select any chart. 
-    - <b>Export</b> is just to export all included properties in JSON format inside Modal Popup.
-    - <b>Apply</b> is just apply all Included properties and draw new Chart with these properties. ( by this you can fine tune all options.)
-    - if you want to apply any Dummy data on chart. just add in <b>TryDummydata</b>. it will draw chart with this data.
-- Once you fine tune all and finalise your chart settings, just export the settings, Copy it and Pass it to "options" property of my   GoogleChart plugin. and thats it. 
+and its done. 
 
 ### some feature which are comming soon.
 - chart drill down option.
 - callback on drill down.
-- return data of selected area in drill down.    
+- return data of selected area on drill down.    
