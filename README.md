@@ -2,23 +2,24 @@
 Implement google charts with some easy steps.
 
 ## Objective & scope of module.
-Google has developed a very powefull tool for chart which has more than 20 charts type included in it. but to implement those charts in your application you need you will have to understand the code standard and write the same code in your application, but if you have multiple charts to be implement on your page then you will have to rewrite same line of code for count of charts. Google charts workes with <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a> so we need to provide data is same formate and that is mandatory, but what if you want to pass your data as it is without any convirsion ? so for easy development and implementation purpose i have developed one plugin where we can just set some options and thats it. 
+Google has developed a very powefull tool for charts which has more 28 charts type included in it. but to implement those charts in your application you need to understand the coding standards standard and write the same in your application, but lets suppose if you have multiple charts to be implement on your page then you will have to rewrite same lines of code for count of charts. 
+        Google charts workes with <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a> so we need to provide data is same formate and that is mandatory, but what if you want to pass your data as it is, without any convirsion ? so for easy development and implementation purpose i have developed one plugin library where we can just set some options and thats it. 
 apart from that i have developed one module where we can generate any <a target="_blank" href="http://googlecharts-configuration-generator.com/">Google charts configuration</a>. so now we can generate our any google chart settings and make our google chart very customizable.
 
 ## Key Features
-- Easy to implement google chart
+- Easy to implement google charts
 - No need to go through google charts all javascript code.
 - Implement google chart with some easy steps
 - Switch your chart by just changing options.
 - Convert your raw JSON data into google chart DataTable*
 
 ## How it works
-My plugin internaly follows all steps of google chart javascript code, so its nothing but one javascript wrapper which has hide all complex code and gives you simple options to implement complex code easily.
+My plugin internaly follows all steps of google chart javascript code, so its nothing but one javascript wrapper which has encapsulated all complex code and gives you simple options to implement complex code easily.
   
 ### Properties and functions:
 
 > Google chart draw charts on the basis of options which we passes along with data. where data can be either in JSON format or google <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a>, but configuration settings are in the form of JSON only. 
-( @Note: here my <a target="_blank" href="http://googlecharts-configuration-generator.com/">GoogleChart Configuration generator</a> comes into the picture. just copy configuration which you have generated from my configuration generator and pass it to this property, and thats it. )
+(@Note: here's my <a target="_blank" href="http://googlecharts-configuration-generator.com/">GoogleChart Configuration generator</a> comes into the picture. just copy configuration which you have generated from my configuration generator module and pass it to this property, and thats it. )
 ```
 /// <field name='options' type='Object'>
 /// This will contains Settings for Chart.<br />
@@ -36,7 +37,7 @@ _Scope.options = null;
 _Scope.data = null;
 ```
 
-> among your RAW JSON data if your have both wanted and unwanted columns, but you want to use only some columns to be include and consider while drawing the chart then you just need to pass those columns names in array format to this option. this option will segregate only mentioned columns from your RAW JSON data and convert it into <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">Google DaTaTable Format</a>.
+> among your RAW JSON data if your have huge numbers of key-value paire JSON, but among those if you want to use only some pairs to be include while drawing the chart then you just need to pass those columns names or Key names in array format to this option. this option will segregate only mentioned columns names or key names from your RAW JSON data and convert it into <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">Google DaTaTable Format</a>.
 ```
 /// <field name='SelectColumns' type='Object'>
 /// This will contains Array of Column Names <br />
@@ -56,7 +57,7 @@ _Scope.SelectColumns = [];
 _Scope.DataTable = null;
 ```
 
-> plugin always expect RAW JSON data. so every time it convert raw json data into Google Datatables Format. but if in case you are passing Google Datatables directly then you need to tell the plugin explicitly to By-Pass convertion process as require data formate is going to pass directly.
+> plugin always expect RAW JSON data. so every time it convert raw json data into Google Datatables Format. but if in case you are passing Google Datatables directly then you need to tell the plugin explicitly to By-Pass convertion process, as require data formate is going to pass directly.
 ```
 /// <field name='ByPassConvertToDataTable' type='Object'>
 /// This will contains google Visualization DataTable data.<br />
@@ -75,7 +76,7 @@ _Scope.ByPassConvertToDataTable = null;
 _Scope.type = "";
 ```
 
-> in google chart we need to pass HTMLElement ID where google chart tool will render chart or draw chart we need to specify any existing HTML Element ID from our page where our chart will draw. 
+> in google chart we need to pass HTMLElement ID inside which, google chart tool will render the chart or draw the chart, so we need to specify any existing HTML Element ID from our page where chart will be drawn. 
 ```
 /// <field name='HTMLElementId' type='String'>
 /// This will contains Id of targeted HTML Element 
@@ -93,7 +94,7 @@ _Scope.HTMLElementId = "";
 _Scope.fnCallBackAfterDraw = null;
 ```
 
-> this is very basic nonmandetory option (its allredy there in Google charts settings generatore), this you can use if you not going to pass any customised settings and want to draw very basic google chart.
+> this is very basic nonmandetory option (its allredy there in Google charts settings generatore),but still you can use it if you not going to pass any customised configuration settings and if you want to draw default google chart.
 ```
 /// <field name='height' type='String'>
 /// This will contains height in Number or String format.<br />
@@ -104,7 +105,7 @@ _Scope.fnCallBackAfterDraw = null;
 _Scope.height = "";
 ```
 
->this is very basic nonmandetory option (its allredy there in Google charts settings generatore), this you can use if you not going to pass any customised settings and want to draw very basic google chart.
+>this is very basic nonmandetory option (its allredy there in Google charts settings generatore),but still you can use it if you not going to pass any customised configuration settings and if you want to draw default google chart.
 ```
 /// <field name='width' type='Number'>
 /// This will contains height in Number or String format.<br />
@@ -115,7 +116,7 @@ _Scope.height = "";
 _Scope.width = "";
 ```
 
-## How to install in your page
+## How to install this library in your page.
 1. Add <a href="https://www.gstatic.com/charts/loader.js" target="_blank">GoogleChart Loader</a> Script in your page
 ```
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -139,10 +140,10 @@ Settings.type = 'PieChart';//mandatory
 Settings.data = data;//mandatory
 
 // if u are passing Google Datatable directly then bypass google Datatables Convertion process
-Settings.ByPassConvertToDataTable = true; //non-mandatory
+Settings.ByPassConvertToDataTable = true; //optional
 
 // pass google Datatable format Directly
-Settings.DataTable = data; //Non-mandatory
+Settings.DataTable = data; //optional
 
 // Chart going to Draw inside this HTML element
 Settings.HTMLElementId = 'Your-HTML-Element-Id'; //mandatory
@@ -151,7 +152,7 @@ Settings.HTMLElementId = 'Your-HTML-Element-Id'; //mandatory
 ObjGoogleCharts.fnDrawChart(Settings); //mandatory
 
 ```
-and its done. 
+and its done. hurrayyyyyy...
 
 ## Some feature which are on road map.
 - chart drill down option.
