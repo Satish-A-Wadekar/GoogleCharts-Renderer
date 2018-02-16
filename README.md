@@ -154,7 +154,7 @@ ObjGoogleCharts.fnDrawChart(Settings); //mandatory
 ```
 and its done. hurrayyyyyy...
 
-## Some feature which are on road map.
+## Some features which are on road map.
 - Drill down functionality.
 - Callback feature on drill down events.
 - Return data to drill down event from selected chart area.    
