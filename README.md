@@ -2,9 +2,9 @@
 Implement google charts with some easy steps.
 
 ## Objective & scope of module.
-Google has developed a very powefull tool for charts which has more 28 charts type included in it. but to implement those charts in your application you need to understand the coding standards standard and write the same in your application, but lets suppose if you have multiple charts to be implement on your page then you will have to rewrite same lines of code for count of charts. 
-        Google charts workes with <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a> so we need to provide data is same formate and that is mandatory, but what if you want to pass your data as it is, without any convirsion ? so for easy development and implementation purpose i have developed one plugin library where we can just set some options and thats it. 
-apart from that i have developed one module where we can generate any <a target="_blank" href="http://googlecharts-configuration-generator.com/">Google charts configuration</a>. so now we can generate our any google chart settings and make our google chart very customizable.
+Google has developed a very powefull tool for charts which has around 28 charts type included in it. but to implement those charts in your application you need to understand the coding standards and follow the same in your application code, but lets suppose if you have multiple charts to be implement on your page then you will have to rewrite same lines of code for count of charts.<br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google charts worke with <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a> so we need to provide data is same formate and that is mandatory, but what if you want to pass your data as it is, without any variation ? so for easy development and implementation purpose i have developed one library where we just need set some options and we are done.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apart from this, i have developed one more module where we can generate any configuration settings from available charts in <a target="_blank" href="http://googlecharts-configuration-generator.com/">Google charts gallery</a>. so now with few clicks we can play and fine tune the google chart settings and make our chart very customizable.
 
 ## Key Features
 - Easy to implement google charts
@@ -155,6 +155,6 @@ ObjGoogleCharts.fnDrawChart(Settings); //mandatory
 and its done. hurrayyyyyy...
 
 ## Some feature which are on road map.
-- chart drill down option.
-- callback on drill down.
-- return data of selected chart area on drill down.    
+- Drill down functionality.
+- Callback feature on drill down events.
+- Return data to drill down event from selected chart area.    
