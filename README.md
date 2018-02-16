@@ -3,7 +3,7 @@ Implement google charts with some easy steps.
 
 ## Objective & scope of module.
 Google has developed a very powefull tool for charts which has around 28 chart types included in it. but to implement those charts in your application you need to understand the coding standards and follow the same in your application code, but lets suppose if you have multiple charts to be implement on your page then you will have to rewrite same lines of code for count of charts.<br /> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google charts work with <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a> so we need to provide data is same formate and that is mandatory, but what if you want to pass your data as it is, without any variation ? so for easy development and implementation purpose i have developed one library where we just need set some options and we are done.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google charts work with <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a> so we need to provide data is same formate and that is mandatory, but what if you want to pass your data as it is, without any variation ? so for easy development and implementation purpose i have developed one library module where we just need set some options and we are done.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apart from this, i have developed one more module where we can generate configuration settings for any chart among available charts from <a target="_blank" href="http://googlecharts-configuration-generator.com/">Google charts gallery</a>. So with few clicks we can play and fine tune the chart settings and make our chart very customizable.
 
 ## Key Features
@@ -14,7 +14,7 @@ Google has developed a very powefull tool for charts which has around 28 chart t
 - Convert your raw JSON data into google chart DataTable*
 
 ## How it works
-My plugin internaly follows all steps of google chart javascript code, so its nothing but one javascript wrapper which has encapsulated all complex code and gives you simple options to implement complex code easily.
+This library module internaly follows all steps of google chart javascript code, so its nothing but one javascript wrapper library which has encapsulated all complex code and gives you very simple options to implement complex code easily.
   
 ### Properties and functions:
 
