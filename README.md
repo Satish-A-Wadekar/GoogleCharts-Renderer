@@ -3,7 +3,7 @@ Implement google charts with some easy steps.
 
 ## Objective & scope of module.
 Google has developed a very powefull tool for chart which has more than 20 charts type included in it. but to implement those charts in your application you need you will have to understand the code standard and write the same code in your application, but if you have multiple charts to be implement on your page then you will have to rewrite same line of code for count of charts. Google charts workes with <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a> so we need to provide data is same formate and that is mandatory, but what if you want to pass your data as it is without any convirsion ? so for easy development and implementation purpose i have developed one plugin where we can just set some options and thats it. 
-apart from that i have developed one module where we can generate any <a target="_blank" href="http://www.googlechartconfigurationgenerator.com">Google charts configuration</a>. so now we can generate our any google chart settings and make our google chart very customizable.
+apart from that i have developed one module where we can generate any <a target="_blank" href="http://googlecharts-configuration-generator.com/">Google charts configuration</a>. so now we can generate our any google chart settings and make our google chart very customizable.
 
 ## Key Features
 - Easy to implement google chart
@@ -116,7 +116,7 @@ _Scope.width = "";
 ```
 
 ## How to install in your page
-1. Add <a href="" target="_blank">GoogleChart Loader</a> Script in your page
+1. Add <a href="https://www.gstatic.com/charts/loader.js" target="_blank">GoogleChart Loader</a> Script in your page
 ```
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 ```
