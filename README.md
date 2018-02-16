@@ -1,21 +1,21 @@
 # GoogleChartsRenderer
 Implement google charts with some easy steps.
 
-# Objective & Scope of GoogleChartsRenderer.
+## Objective & Scope of module.
 Google has developed a very powefull tool for chart which has more than 20 charts type included in it. but to implement those charts in your application you need you will have to understand the code standard and write the same code in your application, but if you have multiple charts to be implement on your page then you will have to rewrite same line of code for count of charts. Google charts workes with <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a> so we need to provide data is same formate and that is mandatory, but what if you want to pass your data as it is without any convirsion ? so for easy development and implementation purpose i have developed one plugin where we can just set some options and thats it. 
 apart from that i have developed one module where we can generate any <a target="_blank" href="http://www.googlechartconfigurationgenerator.com">Google charts configuration</a>. so now we can generate our any google chart settings and make our google chart very customizable.
 
-# Key Features of GoogleChart renderer plugin
+## Key Features of GoogleChart renderer plugin
 - Easy to implement google chart
 - No need to go through google charts all javascript code.
 - Implement google chart with some easy steps
 - Switch your chart by just changing options.
 - Convert your raw JSON data into google chart DataTable*
 
-# How it works
+## How it works
 My plugin internaly follows all steps of google chart javascript code, so its nothing but one javascript wrapper which has hide all complex code and gives you simple options to implement complex code easily.
   
-## Properties and functions:
+### Properties and functions:
 
 > Google chart draw charts on the basis of options which we passes along with data. where data can be either in JSON format or google <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a>, but configuration settings are in the form of JSON only. 
 ( @Note: here my <a target="_blank" href="http://www.googlechartconfigurationgenerator.com">GoogleChart Configuration generator</a> comes into the picture. just copy configuration which you have generated from my configuration generator and pass it to this property, and thats it. )
@@ -115,7 +115,7 @@ _Scope.height = "";
 _Scope.width = "";
 ```
 
-## how to use Google chart Plugin in your page
+## How to use Google chart Plugin in your page
 1. Add <a href="" target="_blank">GoogleChart Loader</a> Script in your page
 ```
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -153,7 +153,7 @@ ObjGoogleCharts.fnDrawChart(Settings); //mandatory
 ```
 and its done. 
 
-### some feature which are comming soon.
+## Some feature which are comming soon.
 - chart drill down option.
 - callback on drill down.
 - return data of selected chart area on drill down.    
