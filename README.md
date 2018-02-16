@@ -115,7 +115,7 @@ _Scope.height = "";
 _Scope.width = "";
 ```
 
-## How to use Google chart Plugin in your page
+## How to install in your page
 1. Add <a href="" target="_blank">GoogleChart Loader</a> Script in your page
 ```
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
