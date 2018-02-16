@@ -18,7 +18,7 @@ My plugin internaly follows all steps of google chart javascript code, so its no
 ### Properties and functions:
 
 > Google chart draw charts on the basis of options which we passes along with data. where data can be either in JSON format or google <a target="_blank" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DaTaTable Format</a>, but configuration settings are in the form of JSON only. 
-( @Note: here my <a target="_blank" href="http://www.googlechartconfigurationgenerator.com">GoogleChart Configuration generator</a> comes into the picture. just copy configuration which you have generated from my configuration generator and pass it to this property, and thats it. )
+( @Note: here my <a target="_blank" href="http://googlecharts-configuration-generator.com/">GoogleChart Configuration generator</a> comes into the picture. just copy configuration which you have generated from my configuration generator and pass it to this property, and thats it. )
 ```
 /// <field name='options' type='Object'>
 /// This will contains Settings for Chart.<br />
