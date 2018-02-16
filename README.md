@@ -1,4 +1,4 @@
-# GoogleChartsRenderer
+# GoogleCharts-Renderer
 Implement google charts with some easy steps.
 
 ## Objective & Scope of module.
